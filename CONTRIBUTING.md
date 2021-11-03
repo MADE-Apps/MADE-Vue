@@ -1,6 +1,6 @@
 # Contributing
 
-These guidelines are designed to help you as a contributor to bring your code and skills to the MADE.js project to make it better.
+These guidelines are designed to help you as a contributor to bring your code and skills to the MADE Vue project to make it better.
 
 ## What can I contribute to?
 
