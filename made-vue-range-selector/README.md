@@ -14,7 +14,7 @@ A Vue 3 range selector component, a double slider that allows the user to select
 To customise the range selector, you'll want to import the scss styling:
 
 ```
-import "made-ui-rangeselector/styles.scss";
+import "made-vue-range-selector/styles.scss";
 ```
 
 In your main file, you can import the component:
@@ -23,7 +23,7 @@ In your main file, you can import the component:
 import { createApp } from "vue";
 import App from "./App.vue";
 
-import RangeSelector from "made-ui-rangeselector";
+import RangeSelector from "made-vue-range-selector";
 
 const app = createApp(App);
 ...

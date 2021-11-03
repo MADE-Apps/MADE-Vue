@@ -12,8 +12,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "made-ui-rangeselector",
-      fileName: (format) => `made-ui-rangeselector.${format}.js`,
+      name: "made-vue-range-selector",
+      fileName: (format) => `made-vue-range-selector.${format}.js`,
     },
     rollupOptions: {
       external: ["vue"],

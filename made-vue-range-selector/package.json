@@ -1,15 +1,15 @@
 {
-  "name": "made-ui-rangeselector",
+  "name": "made-vue-range-selector",
   "version": "1.0.0",
-  "main": "./made-ui-rangeselector.umd.js",
-  "module": "./made-ui-rangeselector.es.js",
+  "main": "./made-vue-range-selector.umd.js",
+  "module": "./made-vue-range-selector.es.js",
   "typings": "./index.d.ts",
   "exports": {
     ".": {
-      "import": "./made-ui-rangeselector.es.js",
-      "require": "./made-ui-rangeselector.umd.js"
+      "import": "./made-vue-range-selector.es.js",
+      "require": "./made-vue-range-selector.umd.js"
     },
-    "./styles.scss": "./scss/made-ui-rangeselector.scss"
+    "./styles.scss": "./scss/made-vue-range-selector.scss"
   },
   "scripts": {
     "dev": "vite",
