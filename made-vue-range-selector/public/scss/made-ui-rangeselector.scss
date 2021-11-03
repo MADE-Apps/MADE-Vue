@@ -1,0 +1,94 @@
+$rangeselector-bar-color: grey;
+$rangeselector-bar-height: 2px;
+$rangeselector-width: 100%;
+$rangeselector-thumb-height: 16px;
+$rangeselector-thumb-width: 16px;
+$rangeselector-thumb-radius: 8px;
+$rangeselector-thumb-color: grey;
+$rangeselector-label-width: 48px !default;
+$rangeselector-label-color: lightgrey;
+
+.rangeselector {
+  display: flex;
+
+  .rangeselector__value {
+    display: inline-block;
+    position: relative;
+    width: $rangeselector-label-width;
+    // color: $shade-0;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: $rangeselector-label-color;
+    padding: 5px 10px;
+
+    &.rangeselector__start {
+      margin: 0 16px 0 0;
+
+      &:after {
+        position: absolute;
+        top: 8px;
+        right: -7px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-left: 7px solid $rangeselector-label-color;
+        border-bottom: 7px solid transparent;
+        content: '';
+      }
+    }
+
+    &.rangeselector__end {
+      margin: 0 0 0 16px;
+      &:after {
+        position: absolute;
+        top: 8px;
+        left: -7px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-right: 7px solid $rangeselector-label-color;
+        border-bottom: 7px solid transparent;
+        content: '';
+      }
+    }
+  }
+
+  .rangeselector__input {
+    position: relative;
+    width: $rangeselector-width;
+
+    input[type=range] {
+      width: 100%;
+      box-sizing: border-box;
+      position: absolute;
+      appearance: none;
+      margin: 0;
+      overflow: hidden;
+      border: 0;
+      border-radius: 1px;
+      outline: none;
+      background: linear-gradient($rangeselector-bar-color, $rangeselector-bar-color) no-repeat center;
+      background-size: 100% $rangeselector-bar-height;
+      pointer-events: none;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+
+      &::-webkit-slider-thumb {
+        height: $rangeselector-thumb-height;
+        width: $rangeselector-thumb-width;
+        border-radius: $rangeselector-thumb-radius;
+        background-color: $rangeselector-thumb-color;
+        position: relative;
+        margin: 5px 0;
+        cursor: pointer;
+        appearance: none;
+        pointer-events: all;
+      }      
+    }
+  }
+}
+  
