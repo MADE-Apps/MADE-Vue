@@ -35,12 +35,14 @@
     "url": "git+https://github.com/MADE-Apps/MADE-Vue.git"
   },
   "keywords": [
-    "UI",
-    "Vue",
-    "Components",
-    "Image",
-    "Background",
-    "Loading"
+    "made",
+    "vue",
+    "ui library",
+    "component library",
+    "component",
+    "image",
+    "background image",
+    "loading"
   ],
   "license": "MIT",
   "bugs": {

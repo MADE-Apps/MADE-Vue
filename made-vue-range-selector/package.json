@@ -35,10 +35,13 @@
     "url": "git+https://github.com/MADE-Apps/MADE-Vue.git"
   },
   "keywords": [
-    "UI",
-    "Vue",
-    "Components",
-    "RangeSelector"
+    "made",
+    "vue",
+    "ui library",
+    "component library",
+    "component",
+    "range selector",
+    "range slider"
   ],
   "license": "MIT",
   "bugs": {
