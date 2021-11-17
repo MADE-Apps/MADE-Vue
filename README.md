@@ -14,8 +14,9 @@ Projects like MADE Vue are built and maintained in spare time. If you find this 
 
 | Component | Status | Current Version | Downloads |
 | ------ | ------ | ------ | ------ |
-| Range Selector | [![made-vue-range-selector](https://github.com/MADE-Apps/MADE-Vue/actions/workflows/made-vue-range-selector.yml/badge.svg)](https://github.com/MADE-Apps/MADE-Vue/actions/workflows/made-vue-range-selector.yml) | [![npm](https://img.shields.io/npm/v/made-vue-range-selector)](https://www.npmjs.com/package/made-vue-range-selector) | ![npm](https://img.shields.io/npm/dt/made-vue-range-selector) |
+| Blades | [![made-vue-blades](https://github.com/MADE-Apps/MADE-Vue/actions/workflows/made-vue-blades.yml/badge.svg)](https://github.com/MADE-Apps/MADE-Vue/actions/workflows/made-vue-blades.yml) | [![npm](https://img.shields.io/npm/v/made-vue-blades)](https://www.npmjs.com/package/made-vue-blades) | ![npm](https://img.shields.io/npm/dt/made-vue-blades) |
 | Image | [![made-vue-image](https://github.com/MADE-Apps/MADE-Vue/actions/workflows/made-vue-image.yml/badge.svg)](https://github.com/MADE-Apps/MADE-Vue/actions/workflows/made-vue-image.yml) | [![npm](https://img.shields.io/npm/v/made-vue-image)](https://www.npmjs.com/package/made-vue-image) | ![npm](https://img.shields.io/npm/dt/made-vue-image) |
+| Range Selector | [![made-vue-range-selector](https://github.com/MADE-Apps/MADE-Vue/actions/workflows/made-vue-range-selector.yml/badge.svg)](https://github.com/MADE-Apps/MADE-Vue/actions/workflows/made-vue-range-selector.yml) | [![npm](https://img.shields.io/npm/v/made-vue-range-selector)](https://www.npmjs.com/package/made-vue-range-selector) | ![npm](https://img.shields.io/npm/dt/made-vue-range-selector) |
 
 ## Contributing 🚀
 
