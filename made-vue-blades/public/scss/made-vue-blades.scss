@@ -1,0 +1,102 @@
+$blade-background-color: #fff;
+$blade-border-color: rgba(200,200,200,.8);
+$blade-box-shadow: 0 8px 16px 0 rgb(0 0 0 / 16%), 0 2px 4px 0 rgb(0 0 0 / 8%);
+$blade-padding: 8px 20px;
+$blade-width-maximized: 100%;
+$blade-width: 45%;
+
+$blade-header-height: 64px;
+$blade-header-font-weight: 600;
+$blade-header-font-size: 24px;
+$blade-header-line-height: 24px;
+$blade-header-margin: 0 16px 0 0;
+
+$blade-button-size: 32px;
+$blade-button-background: none;
+$blade-button-margin: 0;
+$blade-button-border: 0;
+$blade-button-transition: background-color .3s ease-out;
+$blade-button-hover-background: #2c77cc;
+$blade-button-hover-color: #fff;
+
+.bladelayout {
+  display: flex;
+  flex: 1 1 auto;
+  position: relative;
+  flex-direction: row;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.blade {
+  background-color: $blade-background-color;
+  border-color: $blade-border-color;
+  display: flex;
+  flex: 0 0 auto;
+  overflow: hidden;
+  box-shadow: $blade-box-shadow;
+  flex-direction: column;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: $blade-width;
+
+  &.blade-maximized {
+    width: $blade-width-maximized;
+  }
+}
+
+.blade-header {
+  position: relative;
+  height: $blade-header-height;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.blade-header-content {
+  display: flex;
+  height: 100%;
+  padding: $blade-padding;
+  align-items: center;
+}
+
+.blade-header-title {
+  font-weight: $blade-header-font-weight;
+  font-size: $blade-header-font-size;
+  line-height: $blade-header-line-height;
+  flex: 0 1 auto;
+  margin: $blade-header-margin;
+}
+
+.blade-header-actions {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: flex-end;
+}
+
+.blade-action-button {
+  width: $blade-button-size;
+  height: $blade-button-size;
+  background: $blade-button-background;
+  border: $blade-button-border;
+  margin: $blade-button-margin;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: $blade-button-transition;
+
+  &:hover {
+    background-color: $blade-button-hover-background;
+    fill: $blade-button-hover-color;
+  }
+}
+
+.blade-content {
+  height: 100%;
+  padding: $blade-padding;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  min-height: 0;
+}
