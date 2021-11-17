@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./made-vue-range-selector.umd.js",
   "module": "./made-vue-range-selector.es.js",
-  "typings": "./index.d.ts",
+  "typings": "./src/index.d.ts",
   "exports": {
     ".": {
       "import": "./made-vue-range-selector.es.js",
