@@ -1,7 +1,7 @@
 <template>
   <m-blade-layout :blades="blades">
-    <template v-for="blade in blades" v-slot:[blade.key] :key="blade.key">
-      <div>
+    <template v-for="blade in blades" v-slot:[blade.key]>
+      <div :key="blade.key">
         <p>This is some content from {{ blade.title }}</p>
         <button class="blade-button" @click="onCreateBlade">
           Create another blade
@@ -14,7 +14,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import MBlade from "./components/MBlade.vue";
-import MBladeLayout from "./components/MBladeLayout.vue";
+import MBladeLayout, { Blade } from "./components/MBladeLayout.vue";
 
 export default defineComponent({
   name: "App",
@@ -26,8 +26,10 @@ export default defineComponent({
           key: "blade1",
           title: "Blade 1",
           canClose: false,
+          maximized: false,
+          data: {},
         },
-      ],
+      ] as Blade[],
     };
   },
   watch: {},
@@ -38,6 +40,8 @@ export default defineComponent({
         key: "blade" + (currentIndex + 1),
         title: "Blade " + (currentIndex + 1),
         canClose: true,
+        maximized: false,
+        data: {},
       });
     },
   },
