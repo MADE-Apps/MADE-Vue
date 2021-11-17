@@ -28,8 +28,8 @@ import MBlade from "./MBlade.vue";
 
 interface BladeLayoutData {}
 
-export class Blade {
-  key: string | undefined;
+export interface Blade {
+  key: string;
   title: string | undefined;
   maximized: boolean | undefined;
   canClose: boolean | undefined;

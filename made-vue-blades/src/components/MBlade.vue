@@ -78,7 +78,9 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 
-interface BladeData {}
+interface BladeData {
+  isMaximized: boolean;
+}
 
 export default /*#__PURE__*/ defineComponent({
   name: "MBlade",
