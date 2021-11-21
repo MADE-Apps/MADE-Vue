@@ -37,7 +37,7 @@ You can then reference the accordion layout component in your app:
 ```
 <template>
   <m-accordion>
-    <m-accordion-item :startExpanded="true">
+    <m-accordion-item :showExpanded="true">
       <template #header>
         <h2>Item 1</h2>
       </template>

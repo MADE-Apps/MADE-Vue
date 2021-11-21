@@ -1,6 +1,6 @@
 <template>
   <m-accordion>
-    <m-accordion-item id="accordionItem1" :startExpanded="true">
+    <m-accordion-item id="accordionItem1" :showExpanded="true">
       <template #header>
         <h2>Item 1</h2>
       </template>

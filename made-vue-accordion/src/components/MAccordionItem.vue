@@ -41,7 +41,7 @@ export default /*#__PURE__*/ defineComponent({
       required: false,
       default: "",
     },
-    startExpanded: {
+    showExpanded: {
       type: Boolean,
       required: false,
       default: false,
@@ -49,7 +49,7 @@ export default /*#__PURE__*/ defineComponent({
   },
   data(): AccordionItemData {
     return {
-      expanded: this.startExpanded,
+      expanded: this.showExpanded,
     };
   },
   computed: {},
@@ -57,6 +57,11 @@ export default /*#__PURE__*/ defineComponent({
     this.updateExpandedState();
   },
   watch: {
+    showExpanded: {
+      handler(newVal: boolean) {
+        this.expanded = newVal;
+      },
+    },
     expanded: {
       handler() {
         this.$emit("expanded", this.expanded);
