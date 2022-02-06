@@ -3,7 +3,7 @@
     <template v-for="blade in blades" v-slot:[blade.key]>
       <div :key="blade.key">
         <p>This is some content from {{ blade.title }}</p>
-        <button class="blade-button" @click="onCreateBlade">
+        <button class="made-blade-button" @click="onCreateBlade">
           Create another blade
         </button>
       </div>

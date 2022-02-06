@@ -40,7 +40,7 @@ You can then reference the blade layout component in your app:
     <template v-for="blade in blades" v-slot:[blade.key] :key="blade.key">
       <div>
         <p>This is some content from {{ blade.title }}</p>
-        <button class="blade-button" @click="onCreateBlade">
+        <button class="made-blade-button" @click="onCreateBlade">
           Create another blade
         </button>
       </div>

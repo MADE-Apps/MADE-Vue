@@ -1,14 +1,14 @@
 <template>
-  <div :id="id" class="blade" :class="{ 'blade-maximized': isMaximized }">
-    <header class="blade-header">
-      <div class="blade-header-content">
+  <div :id="id" class="made-blade" :class="{ 'made-blade-maximized': isMaximized }">
+    <header class="made-blade-header">
+      <div class="made-blade-header-content">
         <slot name="header">
-          <h2 class="blade-header-title">{{ header }}</h2>
+          <h2 class="made-blade-header-title">{{ header }}</h2>
         </slot>
-        <div class="blade-header-actions">
+        <div class="made-blade-header-actions">
           <button
             type="button"
-            class="blade-action-button blade-action-close-fullscreen"
+            class="made-blade-action-button made-blade-action-close-fullscreen"
             title="Collapse"
             v-if="canResize && isMaximized"
             @click="onMaximize"
@@ -29,7 +29,7 @@
 
           <button
             type="button"
-            class="blade-action-button blade-action-open-fullscreen"
+            class="made-blade-action-button made-blade-action-open-fullscreen"
             title="Maximize"
             v-if="canResize && !isMaximized"
             @click="onMaximize"
@@ -49,7 +49,7 @@
 
           <button
             type="button"
-            class="blade-action-button blade-action-close"
+            class="made-blade-action-button made-blade-action-close"
             title="Close"
             v-if="canClose"
             @click="$emit('close', id)"
@@ -69,7 +69,7 @@
         </div>
       </div>
     </header>
-    <div class="blade-content">
+    <div class="made-blade-content">
       <slot />
     </div>
   </div>
