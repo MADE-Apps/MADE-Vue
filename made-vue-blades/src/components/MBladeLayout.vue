@@ -1,11 +1,11 @@
 <template>
-  <div class="bladelayout">
+  <div class="made-blade-layout">
     <slot>
       <m-blade
         v-for="blade in blades"
         :key="blade.key"
         :id="blade.key"
-        :class="{ 'blade-active': isActiveBlade(blade.key) }"
+        :class="{ 'made-blade-active': isActiveBlade(blade.key) }"
         :canClose="blade.canClose"
         :maximized="blade.maximized"
         @maximize="onBladeMaximize"
@@ -13,7 +13,7 @@
       >
         <template v-slot:header>
           <slot :name="`${blade.key}-header`">
-            <h2 class="blade-header-title">{{ blade.title }}</h2>
+            <h2 class="made-blade-header-title">{{ blade.title }}</h2>
           </slot>
         </template>
         <slot :name="`${blade.key}`" v-bind="blade"></slot>

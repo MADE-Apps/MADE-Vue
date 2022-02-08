@@ -1,21 +1,21 @@
 <template>
-  <div class="image-layout" v-if="!hideImage">
+  <div class="made-image-layout" v-if="!hideImage">
     <transition name="fade">
       <div
-        class="image-layout__image image-layout__loading"
+        class="made-image made-image-loading"
         :class="imageClass"
         v-if="loading"
       >
         <slot name="loading">
-          <div class="loading-indicator" />
+          <div class="made-loading-indicator" />
         </slot>
       </div>
 
       <div
         class="
-          image-layout__image
-          image-layout__placeholder
-          image-layout__image-background
+          made-image
+          made-image-placeholder
+          made-image-background
         "
         v-else-if="showPlaceholder"
         :class="imageClass"
@@ -23,7 +23,7 @@
       ></div>
 
       <div
-        class="image-layout__image image-layout__image-background"
+        class="made-image made-image-background"
         v-else-if="showImage"
         :class="imageClass"
         :style="{ backgroundImage: 'url(' + src + ')' }"

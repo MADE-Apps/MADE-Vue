@@ -1,7 +1,7 @@
 <template>
-  <li class="accordion-item" :class="{ 'accordion-item-active': expanded }">
+  <li class="made-accordion-item" :class="{ 'made-accordion-item-active': expanded }">
     <button
-      class="accordion-item-header"
+      class="made-accordion-item-header"
       type="button"
       :aria-controls="id"
       @click="onExpand"
@@ -13,7 +13,7 @@
     </button>
     <div
       ref="AccordionItemContent"
-      class="accordion-item-content"
+      class="made-accordion-item-content"
       :aria-hidden="!expanded"
       :id="id"
     >

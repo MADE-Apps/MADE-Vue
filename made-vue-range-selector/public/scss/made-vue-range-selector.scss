@@ -1,3 +1,6 @@
+@import './variables';
+@import './functions';
+
 $rangeselector-bar-color: grey;
 $rangeselector-bar-height: 2px;
 $rangeselector-width: 100%;
@@ -6,23 +9,23 @@ $rangeselector-thumb-width: 16px;
 $rangeselector-thumb-radius: 8px;
 $rangeselector-thumb-color: grey;
 $rangeselector-label-width: 48px !default;
-$rangeselector-label-color: lightgrey;
+$rangeselector-label-color: $primary;
 
-.rangeselector {
+.made-rangeselector {
   display: flex;
 
-  .rangeselector__value {
+  .made-rangeselector-value {
     display: inline-block;
     position: relative;
     width: $rangeselector-label-width;
-    // color: $shade-0;
+    color: get_contrast_yiq($rangeselector-label-color, $black, $white);
     line-height: 20px;
     text-align: center;
     border-radius: 3px;
     background: $rangeselector-label-color;
     padding: 5px 10px;
 
-    &.rangeselector__start {
+    &.made-rangeselector-start {
       margin: 0 16px 0 0;
 
       &:after {
@@ -38,7 +41,7 @@ $rangeselector-label-color: lightgrey;
       }
     }
 
-    &.rangeselector__end {
+    &.made-rangeselector-end {
       margin: 0 0 0 16px;
       &:after {
         position: absolute;
@@ -54,7 +57,7 @@ $rangeselector-label-color: lightgrey;
     }
   }
 
-  .rangeselector__input {
+  .made-rangeselector-input {
     position: relative;
     width: $rangeselector-width;
 

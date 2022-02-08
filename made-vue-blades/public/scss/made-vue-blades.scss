@@ -1,3 +1,5 @@
+@import './variables';
+
 $blade-background-color: #fff;
 $blade-border-color: rgba(200,200,200,.8);
 $blade-box-shadow: 0 8px 16px 0 rgb(0 0 0 / 16%), 0 2px 4px 0 rgb(0 0 0 / 8%);
@@ -16,10 +18,10 @@ $blade-button-background: none;
 $blade-button-margin: 0;
 $blade-button-border: 0;
 $blade-button-transition: background-color .3s ease-out;
-$blade-button-hover-background: #2c77cc;
+$blade-button-hover-background: $primary;
 $blade-button-hover-color: #fff;
 
-.bladelayout {
+.made-blade-layout {
   display: flex;
   flex: 1 1 auto;
   position: relative;
@@ -29,7 +31,7 @@ $blade-button-hover-color: #fff;
   overflow-y: hidden;
 }
 
-.blade {
+.made-blade {
   background-color: $blade-background-color;
   border-color: $blade-border-color;
   display: flex;
@@ -41,26 +43,26 @@ $blade-button-hover-color: #fff;
   box-sizing: border-box;
   width: $blade-width;
 
-  &.blade-maximized {
+  &.made-blade-maximized {
     width: $blade-width-maximized;
   }
 }
 
-.blade-header {
+.made-blade-header {
   position: relative;
   height: $blade-header-height;
   flex-shrink: 0;
   box-sizing: border-box;
 }
 
-.blade-header-content {
+.made-blade-header-content {
   display: flex;
   height: 100%;
   padding: $blade-padding;
   align-items: center;
 }
 
-.blade-header-title {
+.made-blade-header-title {
   font-weight: $blade-header-font-weight;
   font-size: $blade-header-font-size;
   line-height: $blade-header-line-height;
@@ -68,13 +70,13 @@ $blade-button-hover-color: #fff;
   margin: $blade-header-margin;
 }
 
-.blade-header-actions {
+.made-blade-header-actions {
   display: flex;
   flex: 1 0 auto;
   justify-content: flex-end;
 }
 
-.blade-action-button {
+.made-blade-action-button {
   width: $blade-button-size;
   height: $blade-button-size;
   background: $blade-button-background;
@@ -91,7 +93,7 @@ $blade-button-hover-color: #fff;
   }
 }
 
-.blade-content {
+.made-blade-content {
   height: 100%;
   padding: $blade-padding;
   position: relative;

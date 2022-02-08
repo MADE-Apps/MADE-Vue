@@ -43,5 +43,7 @@ export default defineComponent({
   margin: 5rem;
   color: #2c3e50;
   margin-top: 60px;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 </style>
