@@ -1,9 +1,9 @@
 <template>
-  <div class="rangeselector">
-    <span class="rangeselector__value rangeselector__start" v-if="showValues">{{
+  <div class="made-rangeselector">
+    <span class="made-rangeselector-value made-rangeselector-start" v-if="showValues">{{
       formatValue(start)
     }}</span>
-    <div class="rangeselector__input">
+    <div class="made-rangeselector-input">
       <input
         type="range"
         :min="min"
@@ -23,7 +23,7 @@
         @input="onEndChange"
       />
     </div>
-    <span class="rangeselector__value rangeselector__end" v-if="showValues">{{
+    <span class="made-rangeselector-value made-rangeselector-end" v-if="showValues">{{
       formatValue(end)
     }}</span>
   </div>

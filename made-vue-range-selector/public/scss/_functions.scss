@@ -1,0 +1,12 @@
+@function get_contrast_yiq($color, $dark, $light) {
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+    $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+    @if ($yiq >= 128) {
+        @return $dark;
+    } @else {
+        @return $light;
+    }
+}
