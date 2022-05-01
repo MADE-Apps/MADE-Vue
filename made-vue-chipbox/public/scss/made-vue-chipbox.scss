@@ -1,0 +1,46 @@
+@import './variables';
+@import './functions';
+
+$chip-padding: 4px 16px;
+$chip-margin: 0 8px 8px 0;
+$chip-border-radius: 16px;
+$chip-remove-margin: 0 0 0 8px;
+
+$chipbox-chips-margin: 8px 0;
+$chipbox-chips-padding: 0;
+
+$chip-bg-color: $primary;
+$chip-text-color: $white;
+
+.made-chip {
+  padding: $chip-padding;
+  list-style: none;
+  color: $chip-text-color;
+  background-color: $chip-bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: $chip-border-radius;
+  margin: $chip-margin;
+
+  .made-chip-remove {
+    margin: $chip-remove-margin;
+    background-color: $chip-bg-color;
+    color: $chip-text-color;
+    border: none;
+  }
+}
+
+.made-chipbox-chips {
+  list-style-type: none;
+  margin: $chipbox-chips-margin;
+  padding: $chipbox-chips-padding;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.made-chipbox-input {
+  width: 100%;
+}
