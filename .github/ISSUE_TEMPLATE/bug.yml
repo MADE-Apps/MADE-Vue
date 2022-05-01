@@ -19,6 +19,7 @@ body:
       options:
         - "accordion"
         - "blades"
+        - "chipbox"
         - "image"
         - "range-selector"
   - type: textarea
