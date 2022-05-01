@@ -9,6 +9,8 @@
 
 A Vue 3 chip/tag input component, a UI component for allowing multiple value input.
 
+<img src="https://raw.githubusercontent.com/MADE-Apps/MADE-Vue/main/assets/components/chipbox.png" alt="MADE Vue Chip Box Component" />
+
 ## Usage
 
 To customise the chip box layout, you'll want to import the scss styling:

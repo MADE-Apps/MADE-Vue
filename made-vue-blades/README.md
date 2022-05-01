@@ -9,6 +9,8 @@
 
 A Vue 3 blade layout component, a UI pattern most commonly seen in the Microsoft Azure portal.
 
+<img src="https://raw.githubusercontent.com/MADE-Apps/MADE-Vue/main/assets/components/blade.png" alt="MADE Vue Blade Component" />
+
 ## Usage
 
 To customise the blade layout, you'll want to import the scss styling:

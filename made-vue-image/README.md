@@ -9,6 +9,8 @@
 
 A Vue 3 image and background image component, allowing an image to be downloaded while showing a loading indicator, showing a placeholder image if the source image fails to load.
 
+<img src="https://raw.githubusercontent.com/MADE-Apps/MADE-Vue/main/assets/components/image.png" alt="MADE Vue Image Component" />
+
 ## Usage
 
 To customize the image or background image component, you'll want to import the scss styling:

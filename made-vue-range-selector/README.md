@@ -9,6 +9,8 @@
 
 A Vue 3 range selector component, a double slider that allows the user to select a value range between a minimum and maximum value.
 
+<img src="https://raw.githubusercontent.com/MADE-Apps/MADE-Vue/main/assets/components/rangeselector.png" alt="MADE Vue Range Selector Component" />
+
 ## Usage
 
 To customise the range selector, you'll want to import the scss styling:
