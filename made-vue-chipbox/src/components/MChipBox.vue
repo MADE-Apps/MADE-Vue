@@ -9,7 +9,7 @@
     <ul class="made-chipbox-chips">
       <m-chip
         v-for="chip in chipBoxChips"
-        :key="chip"
+        :key="chip.content"
         :chip="chip"
         :isReadonly="isReadonly"
         @remove="removeChip(chip)"

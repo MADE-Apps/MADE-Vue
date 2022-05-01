@@ -2,7 +2,7 @@
   <div>
     <m-chip-box
       :chips="chips"
-      :chipExpr="(chip) => chip.content.text"
+      :chipExpr="getChipContent"
       @change="onChipsChanged"
     />
   </div>
@@ -29,6 +29,9 @@ export default defineComponent({
   methods: {
     onChipsChanged(chips: ChipItem[]) {
       this.chips = chips;
+    },
+    getChipContent(chip: ChipItem) {
+      return chip.content.text;
     },
   },
 });
