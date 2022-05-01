@@ -9,6 +9,8 @@
 
 A Vue 3 accordion component, a UI component for containers of expandable content.
 
+<img src="https://raw.githubusercontent.com/MADE-Apps/MADE-Vue/main/assets/components/accordion.png" alt="MADE Vue Accordion Component" />
+
 ## Usage
 
 To customise the accordion layout, you'll want to import the scss styling:
