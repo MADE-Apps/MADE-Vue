@@ -1,3 +1,13 @@
+> [!IMPORTANT]
+> This project is archived and no longer actively maintained.
+>
+> The repository is kept available for reference and for existing users, but no new features, bug fixes, dependency updates, issue triage, or pull request reviews are planned.
+>
+> For current MADE Apps work, see:
+>
+> - [MADE.NET](https://github.com/MADE-Apps/MADE.NET)
+> - [Legerity](https://github.com/MADE-Apps/legerity)
+
 <img src="assets/ProjectBanner.png" alt="MADE Vue project banner" />
 
 # MADE Vue
